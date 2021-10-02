@@ -209,9 +209,10 @@ if st.button("Add Block"):
 # Streamlit Code (continues)
 
 st.markdown("## The PyChain Ledger")
-
 pychain_df = pd.DataFrame(pychain.chain)
 st.write(pychain_df)
+
+
 
 difficulty = st.sidebar.slider("Block Difficulty", 1, 5, 2)
 pychain.difficulty = difficulty
